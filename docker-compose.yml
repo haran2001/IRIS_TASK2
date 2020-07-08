@@ -1,0 +1,19 @@
+version: '3'            #declared version
+services:
+  web:
+    build: .            #building container from root directory
+    links:
+    - db:mysql          #linking app to sql database
+    depends_on:
+    - db                #declaring dependency
+  db:
+    image: mysql        
+    ports:
+    - "3000:3000"
+    environment:
+    - MYSQL_ROOT_PASSWORD="$${Helloworld123}"     #variables for environment change
+    - MYSQL_DATABASE="$${shop1_development}"
+
+
+
+
