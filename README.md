@@ -42,6 +42,7 @@ TASKS COMPLETED:
  A. Enginx related tasks were not completed.
 
  BUGS:
+ 
  A. Image could not run after build due to following error: See screenshot ERROR.png
 
  Note: The Task was not successfully completed.
